@@ -21,6 +21,6 @@
 	$email_body = "Você recebeu uma nova mensagem do seu site.\n\n"."Veja os detalhes:\n\nNome: $name\n\nEmail: $email_address\n\nTelefone: $phone\n\nMensagem:\n$message";
 	$headers = "De: wendersonej.74@gmail.com\n";
 	$headers .= "Respondendo a: $email_address";   
-	mail($to,$email_subject,$email_body,$headers);
-	return true;         
+
+	return mail($to,$email_subject,$email_body,$headers);         
      
